@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Vegano Italiano</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="menu-section">
+        <h1>Pizzería</h1>
+        <p>Menú vegano</p>
+        <h2>Elige algo para beber</h2>
+        <p>Disfruta de nuestra clásica selección de tragos</p>
+        <div class="menu-item">
+          <input type="checkbox" id="martini" value="2550" />
+          <label for="martini"><strong>Martini</strong></label>
+          <span class="price">$2550</span>
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="capuccino" value="1370" />
+          <label for="capuccino"><strong>Capuccino</strong></label>
+          <span class="price">$1370</span>
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="latte" value="1350" />
+          <label for="latte"><strong>Latte</strong></label>
+          <span class="price">$1350</span>
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="mojito" value="2290" />
+          <label for="mojito"><strong>Mojito</strong></label>
+          <span class="price">$2290</span>
+        </div>
+      </div>
+      <hr />
+      <div class="menu-section">
+        <h2>Menú</h2>
+        <p>Disfruta de la mejor cocina italiana</p>
+        <div class="menu-item">
+          <input type="checkbox" id="insalata_riso" value="6750" />
+          <label for="insalata_riso"><strong>Insalata de Riso</strong></label>
+          <p>
+            Una ensalada refrescante con arroz, tomates, aceitunas y albahaca.
+          </p>
+          <img src="assets/img/ensalata_riso.jpeg" alt="Insalata de Riso" />
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="insalata_cipollotti" value="5990" />
+          <label for="insalata_cipollotti"
+            ><strong>Insalata ai Cipollotti</strong></label
+          >
+          <p>
+            Ensalada de cebollines frescos, mezclados con rúcula y un toque de
+            limón.
+          </p>
+          <img
+            src="./assets/img/insalata_cipollotte.jpg"
+            alt="Insalata ai Cipollotti"
+          />
+        </div>
+        <div class="menu-item">
+          <input type="checkbox" id="insalata_caprese" value="8250" />
+          <label for="insalata_caprese"
+            ><strong>Insalata Caprese</strong></label
+          >
+          <p>
+            Clásica ensalada caprese con tomates, mozzarella de almendras y
+            albahaca.
+          </p>
+          <img src="./assets/img/insalata caprese.jpg" alt="Insalata Caprese" />
+        </div>
+      </div>
+      <hr />
+      <div class="menu-section total-section">
+        <h2>Cuenta</h2>
+        <p>Esperamos que disfrute de su comida</p>
+        <div id="total-details"></div>
+        <div id="total-amount"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
